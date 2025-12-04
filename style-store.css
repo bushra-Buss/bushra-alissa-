@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+/* Header styles */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color:   #b4b3b3;
+	color: black;
+	height: 10rem;
+}
+
+.logo img {
+	width: 25%;
+    height: 25%;
+}
+
+nav {
+	width: 30rem;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li a {
+	font-size: 1.2rem;
+	padding: 1rem;
+	text-decoration: none;
+	color: rgb(71, 55, 55);
+    box-shadow: 20px 20px 50px 10px rgb(138, 131, 131);
+    border: 1px solid gray;
+}
+
+nav ul li a:hover {
+	background-color: #0dac30;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.reachUs-button {
+	padding: 1rem;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.reachUs-button:hover{
+	background-color: #1ac840;
+}
+.reachUs-button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Hamburger styles */
+.hamburger {
+	display: none;
+	color: rgb(0, 0, 0);
+	font-size: 2rem;
+    width: 3rem;
+	cursor: pointer;
+}
+/* button buy  styles */
+.buy-btn{
+    background-color: #fff;
+    color: #191919;
+    font-size: 14px;
+    padding: 5px 2rem;
+    margin-bottom: 1.2rem ;
+    margin-top: 0.5rem;
+    min-height: 30px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buy-btn:hover{
+    background-color:  #0dac30;;
+    transition: 1 .1s linear 1.5s;
+}
+.cupcakes , .tortas{
+    margin: 2rem ;
+}
+.cupcakes h2 , .tortas h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.cupcakes #grid-flex, .tortas #grid-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+    
+}
+
+.tortas .grid, .cupcakes .grid{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    
+    
+}
+.cupcakes .grid-item .grid .grid-image, .tortas .grid-item .grid .grid-image{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    background:#f7f7f7;
+    background-position: center center;
+    background-size: contain;
+ 
+}
+.grid-image:hover{
+    background-image: url(images/grid1-2gray.jpg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+     opacity: 1;
+}
+
+.cupcakes .grid img, .tortas .grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: #f7f7f7 0.3s ease; 
+   }
+ 
+.cupcakes .grid-item, .tortas .grid-item{
+    border: 1px solid #f7f7f7;
+    width: 23%;
+    /* height: 20%; */
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 10px rgb(218, 216, 216);
+}
+
+.cupcakes .grid-info,.tortas .grid-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: white;
+}
+.grid:hover, .grid-item:hover, .grid-info:hover{
+    box-shadow: 20px 20px 50px 10px rgb(213, 212, 212);
+    background-color: #f7f7f7;
+    transform: scale(1.02);
+}
+
+.grid-info p:hover{
+    color: #1a7ac4;
+}
+.grid-info span{
+    color: black;
+}
+.tortas .grid-info p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+
+	text-align: center;
+	background-color: #333;
+	color: white;
+    height: 3rem;
+}
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+   
+}
+
+.social-icons li {
+    margin: 0 10px;
+ width: fit-content;
+ margin: 1rem;
+  
+}
+.social-icons li a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.social-icons a img {
+    width: 30px; 
+    height: 30px;
+  
+}
+.social-icons a p{
+ font-size: 14px;
+ padding: 5px;
+}
+.contact-email{
+    padding: 1rem;
+}
+.contact-email a{
+    display: flex;
+    text-decoration: none;
+}
+.contact-email img{
+    width: 45px;
+    height: 40px;
+}
+.contact-email p{
+    padding: 10px;
+}
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+	.reachUs-button{
+        display: none;
+    }
+    h2{
+        margin-top: 2rem;
+    }
+header{
+    height: 9rem;
+}
+	.hamburger {
+		display: flex;
+        margin:2rem;
+        padding-left:  15px;
+        padding-right:  15px;
+	}
+
+	#nav-menu {
+		position: absolute;
+		top: 7rem;
+		left: 0;
+		background-color: #b4b3b3;
+		width: 100%;
+		display: none;
+	}
+
+	#nav-menu.active {
+		display: block;
+		flex-direction: row;
+		padding: 1rem;
+	}
+    .social-icons  {
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     
+      }
+      .social-icons li{
+        margin: 0;
+      }
+   
+}
+
+@media (min-width: 780px) and (max-width: 1100px) {
+    .tortas .grid-item, .cupcakes .grid-item{
+        width: 31%;
+    }
+}
+@media (min-width: 570px) and (max-width: 780px) {
+
+  .tortas .grid-item, .cupcakes .grid-item{
+        width: 47%;
+    }
+}
+
+@media  (max-width: 570px) {
+
+    .grid-item {
+        width: 100%;
+    }
+}

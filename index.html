@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Soukina Cakery</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="coverimage">
+                <div class="backgroundImage">
+                    <nav class="main-nav">
+                        <button class="hamburger" id="hamburger-icon">
+                            <span onclick="openNavbar()"> ☰</span>
+                        </button>
+                        <nav id="nav-menu">
+                            <ul>
+                                <li><a href="store.html">Store</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="location.html">Location</a></li>
+                                <li><a href="contactus.html">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="logo-content">
+                    <div class="logo-container">
+                        <img src="images/soukaina.jpg" alt="logo photo" style="display: block; margin: auto;"/>
+                        <h1>Welcome to our Store</h1>
+                        <a href="store.html"><button class="cover-button">
+                                <span class="cover-button-text">Our Products!</span>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="search-container">
+            
+            <button id="searchButton" onclick="toggleSearchBar()">
+                <a href="test.html" class="ec-minicart__icon" aria-label="Search products">
+                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="currentColor" fill="none" fill-rule="evenodd">
+                            <path d="M21 25c5.523 0 10-4.477 10-10S26.523 5 21 5 11 9.477 11 15s4.477 10 10 10z"
+                                stroke-width="2"></path>
+                            <path d="M13.514 22.486L5.5 30.5" stroke-width="3" stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                </a>
+            </button>
+            <div id="searchBar" class="hidden">
+                <input type="text" placeholder="Type your search..." />
+                <button id="closeButton" onclick="closeSearchBar()">Close</button>
+            </div>
+        </div>
+
+        <section class="productMenu">
+            <div class="menu">
+                <ul>
+                    <li class="cat-name">
+                        <a href="store.html">Cupcakes</a>
+                    </li>
+                    <li class="cat-name">
+                        <a href="store.html">Cakes</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Featured-Product">
+                <p>
+                    Hello! Welcome to Soukina Cakery! We offer you the most delicious cakes and cupcakes for
+                    all kinds of events and celebrations. Browse around to discover what you would like to
+                    buy.
+                </p>
+                <h2>Featured Products</h2>
+                <div class="Featured-cake">
+                    <div class="month-cake">
+                         <a class="grid" href="contactus.html">
+                            <img src="images/Wedding cake.jpg" alt="Month Baby Cake" class="imgeCake" />
+                            <div class="info">
+                                <p>WeedingCake</p>
+                                <div>€250.00</div>
+                                <button type="button" class="buy-btn">Buy Now!</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="month-cake">
+                         <a class="grid" href="contactus.html">
+                            <img src="images/torte2(1).jpg" alt="Month Baby Cake" class="imgeCake" />
+                            <div class="info">
+                                <p>Month Baby Cake</p>
+                                <div>€45.00</div>
+                                <button type="button" class="buy-btn">Buy Now!</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com/soukaina.janati.1" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook" />
+                    <p>ForctedbySoukaina</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/frostedbysoukaina/?igsh=MXUyY2ZwNWpqc3l1Yg%3D%3D" target="_blank"><img src="images/instagram.svg"
+                        alt="Instagram" />
+                    <p>@Soukaina.cakery</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp-circle.svg"
+                        alt="WhatsApp" />
+                    <p>WhatsApp</p>
+                </a>
+            </li>
+        </ul>
+        <div class="contact-email">
+            <a href="contactus.html">
+                <img src="images/contact.jpeg" alt="Facebook" />
+                <p>Contact us</p>
+            </a>
+        </div>
+    </footer>
+    <div class="footer">
+        <p>&copy; 2023 Soukina Cakery</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

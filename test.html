@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soukina Cakery – Store</title>
+  <link rel="stylesheet" href="style-store.css" />
+  <style>
+    /* Minimal styling for demonstration */
+    .filter-controls {
+      margin: 20px 0;
+    }
+    .filter-btn {
+      margin-right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background-color: #ccc;
+    }
+    #grid-flex {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .grid-item {
+      width: calc(33.333% - 20px);
+      box-sizing: border-box;
+    }
+    .grid-item img {
+      max-width: 100%;
+      display: block;
+    }
+    .grid-info {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/soukaina1.png" alt="Soukina Cakery Logo" />
+    </div>
+    <button class="hamburger" id="hamburger-icon" onclick="openNavbar()">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </nav>
+    <button class="reachUs-button"><a href="tel:1234567890">Call us</a></button>
+  </header>
+
+  <main>
+    <h1>Our Cakes & Cupcakes</h1>
+
+    <div class="filter-controls">
+      <input type="text" id="product-search" placeholder="Search cakes by name…" />
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="cake">Cakes</button>
+      <button class="filter-btn" data-category="cupcake">Cupcakes</button>
+    </div>
+
+    <ul id="grid-flex">
+     
+      <li class="grid-item" data-name="Futbol Cake" data-category="cake">
+        <img src="images/Cake (1).jpeg" alt="Futbol Cake" />
+        <div class="grid-info">
+          <p>Futbol Cake</p>
+          <span>€60.00</span>
+          <button class="buy-btn">Buy Now!</button>
+        </div>
+      </li>
+
+      <li class="grid-item" data-name="Butterfly Cake" data-category="cake">
+        <img src="images/Cake  (2).jpeg" alt="Butterfly Cake" />
+        <div class="grid-info">
+          <p>Butterfly Cake</p>
+          <span>€60.00</span>
+          <button class="buy-btn">Buy Now!</button>
+        </div>
+      </li>
+
+      <li class="grid-item" data-name="Flower Cake" data-category="cake">
+        <img src="images/Cake  (8).jpeg" alt="Flower Cake" />
+        <div class="grid-info">
+          <p>Flower Cake</p>
+          <span>€50.00</span>
+          <button class="buy-btn">Buy Now!</button>
+        </div>
+      </li>
+
+    
+    </ul>
+    
+     
+        
+        <ul id="grid-flex">
+          <li class="grid-item"data-name="Futbol Cake" data-category="cake">
+            <a class="grid" href="contactus.html">
+              <img src="images/Cake (1).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Futbol Cake</p>
+                <span>€60.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Butterfly Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (2).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Butterfly Cake</p>
+                <span>€60.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Flower Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (8).jpeg" alt="Cupcakes" />
+              <div class="grid-info">
+                <p>Flower Cake</p>
+                <span>€50.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Pistachio Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (5).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Pistachio cake</p>
+                <span>€79.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="IT Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (7).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>IT Cake</p>
+                <span>€89.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Alphabet Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (10).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Alphabet Cake</p>
+                <span>€49.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Superman Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake (9).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Superman Cake</p>
+                <span>€39.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Fruit Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (8).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Fruit Cake</p>
+                <span>€49.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Flower Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (4).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Flower Birthday Cake</p>
+                <span>€59.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="chocolate Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/cake(11).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>chocolate Birthday Cake</p>
+                <span>€59.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="funny Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/cake(12).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>funny Cake</p>
+                <span>€38.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+        </ul>
+      
+  </main>
+
+  <footer>
+    <!-- your footer here -->
+    <p>&copy; 2025 Soukina Cakery</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>

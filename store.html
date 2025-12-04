@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-store.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/soukaina.png" /></div>
+      <button class="hamburger" id="hamburger-icon">
+        <span onclick="openNavbar()"> ☰</span>
+      </button>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </nav>
+      <button class="reachUs-button"><a href="tel:1234567890">Call us</a></button>
+    </header>
+    <main>
+      <div class="filter-controls">
+  <input type="text" id="product-search" placeholder="Search cakes by name…" />
+  <button data-category="all" class="filter-btn">All</button>
+  <button data-category="cupcake" class="filter-btn">Cupcakes</button>
+  <button data-category="cake" class="filter-btn">Cakes</button>
+  <!-- add more category buttons if you have more categories -->
+</div>
+      <section class="tortas">
+        <h2>Tortas</h2>
+        <ul id="grid-flex">
+          <li class="grid-item"data-name="Futbol Cake" data-category="cake">
+            <a class="grid" href="contactus.html">
+              <img src="images/Cake (1).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Futbol Cake</p>
+                <span>€60.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Butterfly Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (2).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Butterfly Cake</p>
+                <span>€60.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Flower Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (8).jpeg" alt="Cupcakes" />
+              <div class="grid-info">
+                <p>Flower Cake</p>
+                <span>€50.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Pistachio Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (5).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Pistachio cake</p>
+                <span>€79.00</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="IT Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (7).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>IT Cake</p>
+                <span>€89.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Alphabet Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (10).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Alphabet Cake</p>
+                <span>€49.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Superman Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake (9).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Superman Cake</p>
+                <span>€39.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Fruit Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (8).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Fruit Cake</p>
+                <span>€49.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="Flower Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/Cake  (4).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>Flower Birthday Cake</p>
+                <span>€59.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="chocolate Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/cake(11).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>chocolate Birthday Cake</p>
+                <span>€59.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item"data-name="funny Cake" data-category="cake">
+           <a class="grid" href="contactus.html">
+              <img src="images/cake(12).jpeg" alt="Cupcakes" />
+
+              <div class="grid-info">
+                <p>funny Cake</p>
+                <span>€38.50</span>
+                <button type="button" class="buy-btn">Buy Now!</button>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com/soukaina.janati.1" target="_blank"
+            ><img src="./images/facebook.svg" alt="Facebook" />
+            <p>ForctedbySoukaina</p></a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/frostedbysoukaina/?igsh=MXUyY2ZwNWpqc3l1Yg%3D%3D" target="_blank"
+            ><img src="./images/instagram.svg" alt="Instagram" />
+            <p>@frostedbysoukaina</p></a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/1234567890" target="_blank"
+            ><img src="./images/whatsapp-circle.svg" alt="WhatsApp" />
+            <p>WhatsApp</p></a
+          >
+        </li>
+      </ul>
+      <div class="contact-email">
+        <a href="contactus.html">
+          <img src="./images/contact.jpeg" alt="Facebook" />
+          <p>Contact us</p></a
+        >
+      </div>
+    </footer>
+    <div class="footer">
+      <p>&copy; 2025 Soukaina Cakery</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
